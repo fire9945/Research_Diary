@@ -4,7 +4,7 @@ Research Diary
 1-A: 
 MATLAB 전체 디렉토리 백업, REVERB challenge의 clean 훈련데이터와, 잔향시간 추정 방식의 훈련 RIR을 활용하여 새로운 훈련데이터 생성 예정.
 1-D:
-읽을 논문 추가 (잔향환경 음성인식 현황 관련.)
+읽을 논문 추가 (Far-Field_Automatic_Speech_Recognition)
 
 2-A: 
 subband 잔향시간 추정 실험 관련, 음성학회 봄학술대회 논문 초록 작성.
@@ -14,7 +14,10 @@ subband 잔향시간 추정 실험 관련, 음성학회 봄학술대회 논문 �
 *코딩테스트 공부
 *영어공부(OPIc)
 
+*논문읽을 목록:
+Far-Field_Automatic_Speech_Recognition
 
+*읽은논문은 github에 요약 & 정리합시다
 
 
 
