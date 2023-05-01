@@ -6,6 +6,7 @@ ETRI 면접피드백 반영하여 Research Plan (하나하나 마무리하면서
 	A. REVERB challenge의 훈련데이터는 잔향시간이 다양하지 못하여, 잔향시간을 추가하는 것이 큰 의미가 없는 것일 수도 있겠다. 
 	--> 훈련데이터를 변경하여서 잔향시간을 활용하여 보자/ i-vector 추가 방식과 성능을 비교해보자.
 	B. 단순 임베딩 이외에 잔향시간을 활용할 수 있는 방법은 어떤 것이 있을지 찾아보자. / Factor-aware 방식들 정리.
+	- 2015년 subband T60 있는 논문의 introduction에서 cite한 논문 찾아보자.
 	C. 모델 선정 방식이나 posterior probability의가중합 방식을 활용할 수 있을까?
         D. 최근 잔향환경 음성인식 실험 DB나 환경 조사.
 	E. MATLAB 코드들도 정리해서 백업해보자. 
