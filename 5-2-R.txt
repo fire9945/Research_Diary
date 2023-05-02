@@ -1,0 +1,44 @@
+Research Diary
+
+
+1-A: 
+Remind, Reverb challenge의 훈련데이터 생성 & 음성인식 실험 baseline 구축 (21번 서버)
+새로운 훈련DB 생성을 위한 잡음 추가 수집, O categori의 Hallway 사용, 원 훈련 DB에 비해 잡음의 종류가 제한적인 우려점이 있음.
+훈련 DB 생성시 clipping되는 경우가 많았음..
+
+
+
+
+* 추가로 실험할 사항 정리:
+- Baseline 및 2 종류의 새로운 훈련 DB에 대해 음성인식성능 확인 (No embedding)
+  --> 2종류의 새로운 훈련 DB: 전체 양이 비슷 & 각 RIR 별로 비슷 (더 큰 규모가 됨)
+  --> 성능 비교할 때 clean label이나 어떤 훈련 DB에 대한 label을 쓰는 것이 성능에 큰 영향을 미치는지도 확인합시다.
+  --> 추후, speech enhancement를 추가했을 때 성능 비교도 
+
+
+계획했으나 못한일:
+-subband T60 추정 실험결과 정리, 
+attentive 방식 코드정리 & github에 정리, 백업
+
+- CNN 방식의 T60 추정기 구축
+
+- Wav2Vec2.0 DRR 추정
+
+-Fairseq 활용, 음성인식실험
+
+
+
+*논문 읽기
+*코딩테스트 공부
+*영어공부(OPIc)
+
+*논문읽을 목록:
+Far-Field_Automatic_Speech_Recognition
+
+*읽은논문은 github에 요약 & 정리합시다
+
+
+
+	
+	
+
