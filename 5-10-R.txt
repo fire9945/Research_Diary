@@ -1,0 +1,56 @@
+Research Diary
+
+
+1-A: 
+Remind, Reverb challenge의 훈련데이터 생성 & 음성인식 실험 baseline 구축 (21번 서버)
+- 임베딩 관련 실험을 위해 스크립트 수정.
+	공통사항: speed perturbation X, MVN 적용, 네트워크 구조에서 LDA 제거
+	- 성능정리(NewTrData), RealData (near/far) - 
+	Noembedding:  17.85/16.71
+	Online I-vector: 17.79/16.54
+	utt I-vector: 17초반/16초반 --> 이전에 잘못된 실험.. 훈련에는 utt / 테스트에는 online 을 넣었었음.. 수정 완료.
+	T60: 추출중 --> 성능 좋지 않았는데 알고보니 새로 만든 훈련데이터에 대해 뽑아낸 결과가 아니였음 / 다만, 새로 만든 훈련데이터에 대해 뽑아내니 nan 값이 등장(RIR이 너무 작은경우.. 일단 RIR들을 normalization 해줌) 
+	subband T60: 추출중
+	AWSSDR: 추출중
+	PSMSDR: 추출중
+- normalized RIR에 대해 새로 생성한 훈련데이터로 음성인식 실험 재개중.
+
+
+-subband T60 추정 실험결과 정리 --> 44번 서버, 주파수 대역별로 추정 성능 정리
+<attentive 방식 코드정리 & github에 정리, 백업해야함>
+
+- CNN 방식의 T60 추정기 구축
+
+- Wav2Vec2.0 DRR 추정
+
+-Fairseq 활용, 음성인식실험
+
+
+
+*논문 읽기
+*코딩테스트 공부
+*영어공부(OPIc)
+
+*논문읽을 목록:
+Far-Field_Automatic_Speech_Recognition
+--> 관련 challenge 목록 / single-or multi- channel SE 방식들 언급, 대부분은 multi-channel에 초점 맞춤
+
+Single-channel maximum-likelihood T60 estimation exploiting subband information 
+--> RT에 대한 지식을 ASR 뿐만 아니라 잔향제거에도 사용된다고 언급함 / 관련 논문 탐색
+1. [ASR] T. Yoshioka, -, "Making Machines Understand Us in Reverberant Rooms: Robustness Against Reverberation for Automatic speech recognition," 2012
+2. [ASR] R. Maas, -, "On the Application of Reverberation Suppression to Robust Speech Recognition," 2012
+3. [SE] K. Lebart, -, "A New Method based on spectral subtracion for speech dereverberation," 2001
+4. [SE] E.A.P. Habets, -, "Single- and Multi-Micropohne speech dereverberation using spectral enhancemnet," 2007 (phD. thesis)
+5. [SE] H.W. Lollmann, -, "A blind speech enhancement algorithm for the suppression of late reverberation and noise," 2009
+6. [SE] H.W. Loolmann, -, "Low Delay noise reduction and dereverberation for hearing aids," 2009
+
+추가로 읽을 논문들 탐색 & 저장 완료
+
+
+*읽은논문은 github에 요약 & 정리합시다
+
+
+
+	
+	
+
