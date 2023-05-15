@@ -1,0 +1,64 @@
+Research Diary
+
+ 
+-음성학회 발표논문 요약문 수정 작성완료.
+
+1-A: 
+Remind, Reverb challenge의 훈련데이터 생성 & 음성인식 실험 baseline 구축 (21번 서버)
+- 임베딩 관련 실험을 위해 스크립트 수정.
+	공통사항: speed perturbation X, MVN 적용, 네트워크 구조에서 LDA 제거
+
+- normalized RIR에 대해 새로 생성한 훈련데이터로 음성인식 실험 재개중.
+	- 성능정리(NewTrData), RealData (near/far) - 
+	- Noembedding에 비해서, utt I-vector의 경우 유의미한 성능향상 있음.
+	- 반면에 T60, AWSSDR의 경우 없음
+	- 다만, normalization 적용 x 할 경우, AWSSDR도 유의미한 성능향상 있음. --> 하지만 전체 성능이 처참하게 낮음
+	  (normalization 관련하여, 훈련 단계에서 Mean normalization 적용하는 대신, 미리 normalization 적용하고, AWSSDR등의 임베딩 적용하면 다른 결과가 나올지?0
+
+
+* 추가로, 임베딩 위치에 따른 성능 정리. --> 유의미한 성능차이가 있음,  여러 위치에 적용하며 성능을 비교해볼것!
+
+*********************
+* ground truth T60 활용시 성능 검토 --> 추가적인 테스트 데이터 구축?
+* i-vector와 T60관련 파라미터들의 값 비교 (dinamic range / ... weight regularization 한다면, 큰 차이가 나서 문제가 될 수도 있겠음.)
+**********************
+
+
+-subband T60 추정 실험결과 정리 --> 44번 서버, 주파수 대역별로 추정 성능 정리
+<attentive 방식 코드정리 & github에 정리, 백업해야함>
+
+- CNN 방식의 T60 추정기 구축
+
+- Wav2Vec2.0 DRR 추정
+
+-Fairseq 활용, 음성인식실험
+
+
+
+*논문 읽기
+*코딩테스트 공부
+*영어공부(OPIc)
+
+*논문읽을 목록:
+Far-Field_Automatic_Speech_Recognition
+--> 관련 challenge 목록 / single-or multi- channel SE 방식들 언급, 대부분은 multi-channel에 초점 맞춤
+
+Single-channel maximum-likelihood T60 estimation exploiting subband information 
+--> RT에 대한 지식을 ASR 뿐만 아니라 잔향제거에도 사용된다고 언급함 / 관련 논문 탐색
+1. [ASR] T. Yoshioka, -, "Making Machines Understand Us in Reverberant Rooms: Robustness Against Reverberation for Automatic speech recognition," 2012
+2. [ASR] R. Maas, -, "On the Application of Reverberation Suppression to Robust Speech Recognition," 2012
+3. [SE] K. Lebart, -, "A New Method based on spectral subtracion for speech dereverberation," 2001
+4. [SE] E.A.P. Habets, -, "Single- and Multi-Micropohne speech dereverberation using spectral enhancemnet," 2007 (phD. thesis)
+5. [SE] H.W. Lollmann, -, "A blind speech enhancement algorithm for the suppression of late reverberation and noise," 2009
+6. [SE] H.W. Loolmann, -, "Low Delay noise reduction and dereverberation for hearing aids," 2009
+
+추가로 읽을 논문들 탐색 & 저장 완료
+
+
+*읽은논문은 github에 요약 & 정리합시다
+
+
+
+	
+	
+
